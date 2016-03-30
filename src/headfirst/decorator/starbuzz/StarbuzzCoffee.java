@@ -2,6 +2,7 @@ package headfirst.decorator.starbuzz;
 abstract class Beverage {
   String description="Unknown berverage";
   public String getDescription() {
+    return  description;
   }
   public abstract double cost();
 }
@@ -11,8 +12,10 @@ class Espresso extends Beverage {
     description="Espresso";
   }
   public double cost() {
-    return 1.99;
+    return .99;
   }
+}
+
 
 class DarkRost extends Beverage {
   public DarkRost() {
@@ -24,7 +27,7 @@ class DarkRost extends Beverage {
 }
 
 
-class  CondimentDecortator extends Beverage {
+abstract class  CondimentDecortator extends Beverage {
  public abstract String getDescription();
 }
 
@@ -46,10 +49,10 @@ class Whip extends  CondimentDecortator {
         beverage=b;
     }
   public String getDescription(){
-  return beverage.getDescription() + "Whip";
+  return beverage.getDescription() + ".Whip";
 }
 public double cost() {
-    return beverage.cost() + .10;
+    return beverage.cost() +.10;
   }
 }
 
@@ -57,11 +60,13 @@ public class StarbuzzCoffee {
   public static void main(String args[]) {
     Beverage b= new DarkRost();
     
-    Beverage md=new Mocha(b);
-    Beverage wmd=new Whip(md);
+    Beverage md= new Mocha(b);
+    Beverage wmd= new Whip(md);
    // Beverage wmd=new Whip(new Mocha(new DarkRost()));
     System.out.println(wmd.getDescription());
     System.out.println(wmd.cost());
+  
   }
 }
+
 
