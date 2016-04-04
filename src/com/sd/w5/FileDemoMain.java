@@ -17,13 +17,13 @@ public class FileDemoMain {
     try {
       int i;
       char c;
-      File myhome=new File(System.getProperty("user.hmoe"));
+      File myhome=new File(System.getProperty("user.home"));
       System.out.println("my home" +myhome);
       
       String cwd=new File("src/").getCanonicalPath();
       System.out.println("cwd is"+cwd);
       
-      File readme=new File(cwd,"¹Ú¹üÁø/HelloWorld.java");
+      File readme=new File(cwd,"HelloWorld.java");
       System.out.println("readme is"+readme);
     
       isReadme =new FileInputStream(readme);
