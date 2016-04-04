@@ -1,0 +1,34 @@
+/*
+ * @author pbj
+ * @since 160404
+ * demo how to use file decorator
+ * 
+ */
+
+
+package com.sd.w5;
+
+public class FileDemoMain() {
+  public static void main(String[] args) throws Exception {
+    try {
+      File myhome=new File(System.getProperty("user.hmoe"));
+      System.out.println("my home" +myhome);
+      
+      String cwd=new File(".").getCanonicalPath();
+      System.out.println("cwd is"+cwd);
+      
+      readme=new File(cwd,"박범진/사고와표현.txt");
+      System.out.println("readme is"+readme);
+      
+      InputStream isReadme =new FileInputStream(readme);
+      while(i=isReadme.read()) !=-1) {
+        c=(char)i;
+        System.out.print(c);
+      }
+      }catch(Exception e) {
+        e.printStackTrace();
+      }finally{
+        if(isReadme !=null)
+          isReadme.close();
+      }
+       
