@@ -1,17 +1,21 @@
 package com.sd.w6;
 
-abstract public class Pizza {
+public abstract class Pizza{
   String name;
-  public void prepare() {
-    System.out.println("preparing" +name);
+  
+  void prepare() {
+    System.out.println("Prepareing..."+ name);
   }
-  public void bake(){
-    System.out.println("backing" +name);
+  void bake() {
+  System.out.println("Baking...");
   }
-  public void cut(){
-  System.out.println("cutting" +name);
+  void cut() {
+   System.out.println("Cutting...");
   }
-  public void box(){
-  System.out.println("boxing" +name);
+  void box() {
+  System.out.println("Boxing...");
+  }
+  public String getName() {
+    return name;
   }
 }

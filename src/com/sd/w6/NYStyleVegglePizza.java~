@@ -1,0 +1,7 @@
+package com.sd.w6;
+
+public  class NYStyleVegglePizza extends Pizza {
+  public NYStyleCheesePizza() {
+    name="NY Veggle Pizza";
+  }
+}
