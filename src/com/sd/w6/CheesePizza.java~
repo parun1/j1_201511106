@@ -1,7 +1,0 @@
-package com.sd.w6;
-
-public class CheesePizza extends Pizza{
-  public ChessePizza() {
-    name="Cheese Pizza"
-  }
-}

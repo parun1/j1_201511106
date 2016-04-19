@@ -1,0 +1,26 @@
+package com.sd.w7;
+
+public abstract class Pizza{
+  String name;
+  Dough dough;
+  Cheese cheese;
+  
+  void prepare() {
+    System.out.println("Prepareing..."+ name);
+  }
+  void bake() {
+  System.out.println("Baking...");
+  }
+  void cut() {
+   System.out.println("Cutting...");
+  }
+  void box() {
+  System.out.println("Boxing...");
+  }
+  void setName() {
+    this.name=name;
+  }
+  public String getName() {
+    return name;
+  }
+}
