@@ -1,0 +1,11 @@
+package com.sd.w9;
+
+public class LightOnCommand implements Command {
+  Light iight;
+  public void LightOnCommand(Light light) {
+    this.light=light;
+  }
+  public void execute() {
+  light.on();
+ }
+}

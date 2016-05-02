@@ -1,0 +1,10 @@
+package com.sd.w9;
+
+public class Light{
+  public void on() {
+  System.out.println("on");
+  }
+  public voud off() {
+  System.out.println("off");
+  }
+}

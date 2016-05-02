@@ -1,0 +1,11 @@
+package com.sd.w9;
+
+public class GarageDoor{
+  public GarageDoor();
+  public void up() {
+  System.out.println("up");
+  }
+  public voud down() {
+  System.out.println("down");
+  }
+}

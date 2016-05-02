@@ -1,0 +1,10 @@
+package com.sd.w9;
+
+public class RemoteControlTest {
+  public static void main(String[] args){
+    Light light=new Light();
+    LightOnCommand LightOn=new LightOnCommand(light);
+     SimpleRemoteControl setCommand=new  SimpleRemoteControl(lightOn);
+      SimpleRemoteControl buttonWasPreesed=new  SimpleRemoteControl(setCommand);
+  }
+}

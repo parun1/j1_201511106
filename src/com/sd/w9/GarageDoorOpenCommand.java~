@@ -1,0 +1,11 @@
+package com.sd.w9;
+
+public class GarageDoorOpenCommand implements Command {
+  private Garage garage;
+  public GarageDoorOpenCommand(Garage garage) {
+     this.garage=garage;
+  }
+  public void execute() {
+    garage.up();
+ }
+}
