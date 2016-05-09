@@ -1,0 +1,6 @@
+package com.sd.w10;
+
+public interface Duck{
+  public void quack();
+  pbulic void fly;
+}
