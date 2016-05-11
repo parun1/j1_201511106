@@ -1,0 +1,21 @@
+package com.sd.w10;
+
+public class Projector{
+  String decription;
+  DvdPlayer dvd;
+  public Projector(String decription,DvdPlayer dvd){
+    this.decription=decription;
+  }
+  public void on(){
+    System.out.prinln("on");
+  }
+  public void off(){
+    System.out.prinln("off");
+  }
+  public wideScreenMode(){
+     System.out.prinln("ScreenMode");
+  }
+   public String toString() {
+    return description
+  }
+}

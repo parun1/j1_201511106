@@ -1,0 +1,23 @@
+package com.sd.w10;
+
+public class DvdPlayer{
+  String description;
+  Amplifier amp;
+  String movie;
+  public void DvdPlayer(String description,Amplifier amp){
+    this.description=description;
+  }
+  public void on(){
+    System.out.prinln("on");
+  }
+  public void off(){
+    System.out.prinln("off");
+  }
+  public void play(String moive){
+     System.out.prinln(decscription+moive);
+     this.moive=moive;
+  }
+  public String toString() {
+    return description
+  }
+    
