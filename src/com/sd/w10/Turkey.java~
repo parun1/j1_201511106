@@ -1,6 +1,0 @@
-package com.sd.w10;
-
-public interface Turkey{
-  public void gobble();
-  pbulic void fly;
-}
