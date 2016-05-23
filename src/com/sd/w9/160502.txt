@@ -1,0 +1,34 @@
+class Light {
+   +on():void
+   +off():void
+}
+
+class GarageDoor{
+    +up():void
+    +down():void
+}
+class Command {
+  +execute()
+  }
+class LightOnCommand {
+-light:Light
++LightOnCommand(Light):void
++execute():void
+}
+
+ Command <|.. LightOnCommand
+ LightOnCommand  --> Light
+ 
+class GarageDoorOpenCommand 
+Command <|.. GarageDoorOpenCommand
+GarageDoorOpenCommand -down-> GarageDoor
+
+class SimpleRemoteControl {
+-slot:Command
++setCommand(Command)
++buttonPressed()
+}
+
+SimpleRemoteControl ->Command
+Client -> SimpleRemoteControl:setCoomand()
+Client -> SimpleRemoteControl:buttonPressed();
