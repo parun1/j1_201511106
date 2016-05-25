@@ -1,5 +1,6 @@
 package com.sd.w12.iterator;
 
+<<<<<<< HEAD
 public class DinerMenu implements Menu {
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
@@ -36,4 +37,35 @@ public class DinerMenu implements Menu {
     public Iterator createIterator() {
         return new DinerMenuIterator(menuItems);
     }
+=======
+
+import java.util.ArrayList;
+
+public class DinerMenu {
+  //static final int MAX_ITEMS = 3;
+  //int numberOfItems = 0;
+  //MenuItem[] menuItems;
+  ArrayList menuItems;
+  
+  public DinerMenu() {
+    //menuItems = new MenuItem[MAX_ITEMS];
+    menuItems = new ArrayList();
+    addItem("BLT", "...1", true, 2.9);
+   addItem("BLT", "...1", true, 2.9);
+   addItem("BLT", "...1", true, 2.9);
+  }
+  
+  public void addItem(String name, String description, boolean v, double p) {
+    MenuItem menuItem = new MenuItem(name, description, v, p);
+    //if (numberOfItems >= MAX_ITEMS) {
+    //  System.err.println("Error");
+    //} else {
+    //  menuItems[0] = menuItem;
+    //  numberOfItems = numberOfItems+1;
+    //}
+    
+    menuItems.add(menuItem);
+  }
+  
+>>>>>>> ebe3e411906d3dafee2e6e9de35430d89c00b3ae
 }
