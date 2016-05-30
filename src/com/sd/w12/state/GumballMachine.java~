@@ -1,0 +1,52 @@
+package com.sd.w12.state;
+
+public class GumballMachine {
+  int count =0;
+  final static int SOLD_OUT=0;
+  final static int NO_QUARTER=1;
+  final static int HAS_QUARTER=2;
+  final static int SOLD=3;
+  
+  int state=SOLD_OUT;
+  public GumballMachine(int count){
+    this.count=count;
+    if(count>0) {
+      state=NO_QUARTER;
+    }
+  }
+  public void inserQuarter(){
+    if(state==HAS_QUARTER{
+       System.out.print("You can not insert another quarter");
+    }
+    else if (state==NO_QUARTER){
+       state=HAS_QUARTER;
+       System.out.print("You inserted another quarter");
+       }
+       else if (state==SOLD_OUT){
+       System.out.print("You can not insert,SOLD OUT");
+       }
+         else if (state==SOLD){
+         System.out.print("wait, we already given a gumball");
+         }
+  }
+  public void ejectQuarter(){
+    if(state==HAS_QUARTER{
+      state=NO_QUARTER;
+       System.out.print("Quarter returned");
+    }
+       else if (state==NO_QUARTER){
+       System.out.print("You haven't inserted a quarter");
+       }
+       else if (state==SOLD_OUT){
+       System.out.print("You can not eject, you haven't inserted a quarater yet");
+       }
+         else if (state==SOLD){
+         System.out.print("Sorry you already turned the crank");
+         }
+  }
+  public void turnCrank();
+  public void dispense();
+  
+}
+  
+  
